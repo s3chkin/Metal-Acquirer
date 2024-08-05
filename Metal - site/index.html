@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Acquirer </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "1oufiGMRMkGd05iXD",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#" style="font-size: 25px; font-weight: bold;"><b>Metal <span
+                            style="color: #fd5e53;">Acquirer</span></b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="font-size: 18px;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#LoveYou"
+                                style="font-size: 18px;">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Timer"
+                                style="font-size: 18px;">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section id="home" class="page1">
+        <div class="bg-page1">
+            <ul data-aos="fade-up" id="list" class="d-flex justify-content-center">
+                <li style="animation: fadeIn 0.9s ease-in both">Всякакви метали от всякакъв тип!</li>
+            </ul>
+            <br>
+            <div data-aos="fade-up" class="box fadeInUp" style=" margin-left: 15px; margin-right: 15px;">
+                Специалисти в събирането и изкупуването на метали <br> от различни източници!
+            </div>
+            <br><br><br>
+            <div data-aos="flip-down" class="box ">
+                <a href="#LoveYou">
+                    <button class="imgButton btn">
+                        Свържи се
+                    </button></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center align-items-center" style="margin-top: 45px; margin-bottom: 45px;">
+                <div class="col-md-6 text-center text-md-start">
+                    <h2><b>Welcome to Metal<span style="color: #fd5e53;"> Acquirer</span></b></h2>
+                    <br>
+                    <p>
+                        Our goal is to collect and purchase ferrous and non-ferrous metals from homes, offices,
+                        factories, and plants. We offer an easy and convenient process for disposing of unwanted metal
+                        items, ensuring fair compensation and contributing to environmental protection through
+                        recycling. Contact us to learn more!
+                    </p>
+                    <br>
+                    <a id="headingBtn" href="#" class="btn">Contact Us</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./img/metal1.png" alt="" class="img-fluid" style="width:400px;max-width: 100%; ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="service_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Where do we collect the <span style="color: #fd5e53;">metals</span> from?</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center" style="height: 258px; overflow: hidden;">
+                        <div class="img-box">
+                            <i class="bi bi-house-fill" style="font-size: 70px;"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>Homes</h5>
+                            <p>We collect metal items from homes, providing an easy way to recycle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center" style="height: 258px; overflow: hidden;">
+                        <div class="img-box">
+                            <i class="bi bi-house-gear-fill" style="font-size: 70px;"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>Factories</h5>
+                            <p>We purchase metal waste from factories, aiding in sustainable resource management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center" style="height: 258px; overflow: hidden;">
+                        <div class="img-box">
+                            <i class="bi bi-houses-fill" style="font-size: 70px;"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>Plants</h5>
+                            <p>We collect and recycle metals from industrial plants.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center" style="height: 258px; overflow: hidden;">
+                        <div class="img-box">
+                            <i class="bi bi-building-fill" style="font-size: 70px;"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>Offices</h5>
+                            <p>We remove unwanted metal items from offices, facilitating the recycling process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center" style="height: 258px; overflow: hidden;">
+                        <div class="img-box">
+                            <i class="bi bi-building-up" style="font-size: 70px;"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>Warehouses</h5>
+                            <p>We buy metals from warehouses, offering efficient waste management solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="box text-center" style="height: 262px; overflow: hidden;">
+                        <div class="img-box">
+                            <i class="bi bi-buildings-fill" style="font-size: 70px;"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>Commercial Properties</h5>
+                            <p>We provide professional metal collection services for commercial properties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Contact
+                    <span> Us </span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <br>incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="title">
+                        <h3>Contact detail</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    </div>
+                    <div class="content">
+                        <!-- Info-1 -->
+                        <div class="info">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h4 class="d-inline-block">PHONE :
+                                <br>
+                                <span>+12457836913 , +12457836913</span>
+                            </h4>
+                        </div>
+                        <!-- Info-2 -->
+                        <div class="info">
+                            <i class="bi bi-envelope-at-fill"></i>
+                            <h4 class="d-inline-block">EMAIL :
+                                <br>
+                                <span>example@info.com</span>
+                            </h4>
+                        </div>
+                        <!-- Info-3 -->
+                        <div class="info">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h4 class="d-inline-block">ADDRESS :<br>
+                                <span>6743 last street , Abcd, Xyz</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+
+                    <form onsubmit="sendMail(); return false;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="name" style="display: none;"></label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                                    required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email" style="display: none;"></label>
+                                <input type="email" class="form-control" placeholder="Email" id="email" name="email"
+                                    required>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="subject" style="display: none;"></label>
+                                <input type="text" class="form-control" placeholder="Subject" id="subject"
+                                    name="subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" style="display: none;"></label>
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <button class="btn btn-block" type="submit">Send Now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
