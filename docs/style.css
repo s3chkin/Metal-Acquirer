@@ -114,6 +114,7 @@ a {
   /* line-height: 90px; */
   color: #dadada;
   font-size: 17px;
+  border-radius: 8px;
 }
 
 .fadeInUp {
@@ -278,8 +279,8 @@ btn:hover {
 }
 
 .contact .heading h2 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 2 rem;
+  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -314,6 +315,12 @@ btn:hover {
   background-color: #fd5e53;
   color: #ffffff;
   width: 100%;
+}
+.contact button.btn:hover {
+  background-color: #fd5e5300;
+  color: #fd5e53;
+  width: 100%;
+  border: 1px solid #fd5e53;
 }
 
 .contact .title h3 {
@@ -351,4 +358,65 @@ btn:hover {
   font-size: 13px;
   font-weight: 300;
   color: #999999;
+}
+
+.portfolio_section {
+  background-color: black; /*  #832f47 */
+  color: #ffffff;
+  padding-top: 45px;
+}
+
+.portfolio_section .heading_container {
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #fd5e53;
+  border-radius: 50px;
+  animation: loading 0.75s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }

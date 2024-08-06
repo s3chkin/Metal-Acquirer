@@ -16,35 +16,34 @@ function sendMail() {
   document.getElementById("message").value = "";
 }
 
-// function sendMail() {
-//   let name = document.getElementById("name").value;
-//   let email = document.getElementById("email").value;
-//   let subject = document.getElementById("subject").value;
-//   let message = document.getElementById("message").value;
+// Амимации за показване на елементите
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".hidden");
+  const observerOptions = {
+    threshold: 0.5,
+  };
 
-//   // Tüm alanların dolu olup olmadığını kontrol et
-//   if (name && email && subject && message) {
-//     let parms = {
-//       name: name,
-//       email: email,
-//       subject: subject,
-//       message: message,
-//     };
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
 
-//     emailjs.send("service_086darc", "template_ic2fkva", parms).then(
-//       function (response) {
-//         alert("Email Sent!");
-//         name = null;
-//         email = null;
-//         subject = null;
-//         message = null;
-//       },
-//       function (error) {
-//         alert("Failed to send email. Please try again later.");
-//         console.log("FAILED...", error);
-//       }
-//     );
-//   } else {
-//     alert("Please fill in all the fields.");
-//   }
-// }
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+//Loading
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild("loader");
+  });
+});

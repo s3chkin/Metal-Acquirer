@@ -22,6 +22,9 @@
         })();
     </script>
     <script src="script.js"></script>
+
+
+
 </head>
 
 <body>
@@ -42,12 +45,12 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#LoveYou"
+                            <a class="nav-link active" aria-current="page" href="#AboutUs"
                                 style="font-size: 18px;">About Us</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Timer"
+                            <a class="nav-link active" aria-current="page" href="#contact"
                                 style="font-size: 18px;">Contact Us</a>
                         </li>
                     </ul>
@@ -55,6 +58,9 @@
             </div>
         </nav>
     </div>
+
+
+
     <section id="home" class="page1">
         <div class="bg-page1">
             <ul data-aos="fade-up" id="list" class="d-flex justify-content-center">
@@ -74,10 +80,13 @@
         </div>
     </section>
 
-    <section>
+    <div class="loader"></div>
+
+    <section id="AboutUs">
         <div class="container">
-            <div class="row justify-content-center align-items-center" style="margin-top: 45px; margin-bottom: 45px;">
-                <div class="col-md-6 text-center text-md-start">
+            <div class="row justify-content-center align-items-center hidden"
+                style="margin-top: 45px; margin-bottom: 45px;">
+                <div class="col-md-6 text-center text-md-start ">
                     <h2><b>Welcome to Metal<span style="color: #fd5e53;"> Acquirer</span></b></h2>
                     <br>
                     <p>
@@ -95,14 +104,17 @@
             </div>
         </div>
     </section>
+
+
+
     <br>
-    <section class="service_section layout_padding">
+    <section class="service_section layout_padding ">
         <div class="container">
             <div class="heading_container heading_center">
                 <h2>Where do we collect the <span style="color: #fd5e53;">metals</span> from?</h2>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden">
                     <div class="box text-center" style="height: 258px; overflow: hidden;">
                         <div class="img-box">
                             <i class="bi bi-house-fill" style="font-size: 70px;"></i>
@@ -113,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden">
                     <div class="box text-center" style="height: 258px; overflow: hidden;">
                         <div class="img-box">
                             <i class="bi bi-house-gear-fill" style="font-size: 70px;"></i>
@@ -124,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden">
                     <div class="box text-center" style="height: 258px; overflow: hidden;">
                         <div class="img-box">
                             <i class="bi bi-houses-fill" style="font-size: 70px;"></i>
@@ -135,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden">
                     <div class="box text-center" style="height: 258px; overflow: hidden;">
                         <div class="img-box">
                             <i class="bi bi-building-fill" style="font-size: 70px;"></i>
@@ -146,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden">
                     <div class="box text-center" style="height: 258px; overflow: hidden;">
                         <div class="img-box">
                             <i class="bi bi-building-up" style="font-size: 70px;"></i>
@@ -157,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 hidden">
                     <div class="box text-center" style="height: 262px; overflow: hidden;">
                         <div class="img-box">
                             <i class="bi bi-buildings-fill" style="font-size: 70px;"></i>
@@ -171,24 +183,54 @@
             </div>
         </div>
     </section>
+    <br>
+    <section class="portfolio_section" style="margin-top: 50px;">
+        <div class="container">
+            <div class="heading_container heading_center hidden">
+                <h2>
+                    Any metals
+                </h2>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="row g-3 justify-content-center" style="padding-bottom: 60px; padding-top: 30px;">
+                <div class="col-12 col-md-4 text-center hidden">
+                    <img src="./img/img1.jpg" alt="" class="img-fluid mx-auto d-block" style="border-radius: 5px;">
+                    <p style="margin-top: 10px;">Non-ferrous metals</p>
+                </div>
+                <!-- <div class="col-12 col-md-4 text-center">
+                    <img src="./img/img2.jpg" alt="" class="img-fluid mx-auto d-block" style="border-radius: 5px;">
+                </div> -->
+                <div class="col-12 col-md-4 text-center hidden">
+                    <img src="./img/img3.jpg" alt="" class="img-fluid mx-auto d-block" style="border-radius: 5px;">
+                    <p style="margin-top: 10px;">Ferrous metals</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <br>
+
+
+
     <section class="contact" id="contact">
         <div class="container">
-            <div class="heading text-center">
+            <div class="heading text-center hidden">
                 <h2>Contact
                     <span> Us </span>
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    <br>incididunt ut labore et dolore magna aliqua.
+                <p>Have any questions or need more information? We're here <br> to help! Reach out to us using the form
+                    below, and we'll get back to you as soon as possible.
                 </p>
             </div>
-            <div class="row">
+            <div class="row hidden">
                 <div class="col-md-5">
                     <div class="title">
                         <h3>Contact detail</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <p>Or use the provided alternative contact methods.</p>
                     </div>
                     <div class="content">
                         <!-- Info-1 -->
@@ -217,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-md-7 hidden">
 
                     <form onsubmit="sendMail(); return false;">
                         <div class="row">
@@ -248,6 +290,25 @@
             </div>
         </div>
     </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center py-2">
+
+                <div class="mb-2 mb-md-0">
+                    <p>Website developed by <a target="_blank" href="https://www.tiktok.com/@digital.gifts.bg">Digital
+                            Services (digital gifts)</a></p>
+                </div>
+                <div class="mb-2 mb-md-0">
+                    <p>&copy; 2024 Metal Acquirer.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
