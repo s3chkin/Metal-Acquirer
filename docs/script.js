@@ -9,6 +9,11 @@ function sendMail() {
   emailjs
     .send("service_086darc", "template_ic2fkva", parms)
     .then(alert("Email Sent!"));
+
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("subject").value = "";
+  document.getElementById("message").value = "";
 }
 
 // function sendMail() {
@@ -26,10 +31,13 @@ function sendMail() {
 //       message: message,
 //     };
 
-//     // emailjs kullanarak e-posta gönder
 //     emailjs.send("service_086darc", "template_ic2fkva", parms).then(
 //       function (response) {
 //         alert("Email Sent!");
+//         name = null;
+//         email = null;
+//         subject = null;
+//         message = null;
 //       },
 //       function (error) {
 //         alert("Failed to send email. Please try again later.");
