@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Loading
+//Loader
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
 
