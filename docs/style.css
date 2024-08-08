@@ -420,3 +420,7 @@ footer {
     transform: rotate(1turn);
   }
 }
+
+.alert-success {
+  display: none;
+}
