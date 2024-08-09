@@ -52,9 +52,10 @@ a {
 
 #list {
   list-style: none;
+  text-align: center;
 }
 
-#list li {
+#list p {
   text-align: center;
   /* line-height: 50px; */
   opacity: 0;
@@ -63,19 +64,19 @@ a {
   font-weight: 700;
 }
 
-#list li:nth-child(2) {
+#list p:nth-child(2) {
   animation-delay: 0.5s;
 }
 
-#list li:nth-child(3) {
+#list p:nth-child(3) {
   animation-delay: 1s;
 }
 
-#list li:nth-child(4) {
+#list p:nth-child(4) {
   animation-delay: 2s;
 }
 
-#list li:nth-child(5) {
+#list p:nth-child(5) {
   animation-delay: 3s;
 }
 
@@ -306,6 +307,8 @@ btn:hover {
   background: #f9f9f9;
   border: 0;
   border-radius: 10px;
+  /* background-color: #f3f3f3; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact button.btn {
