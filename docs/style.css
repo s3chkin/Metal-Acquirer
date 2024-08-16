@@ -427,3 +427,52 @@ footer {
 .alert-success {
   display: none;
 }
+
+.fun-facts {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.fun-facts .counter {
+  background-color: #fd5e5340;
+  position: relative;
+  border-radius: 10px;
+  width: 270px;
+  padding: 20px 0px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.fun-facts .counter h2,
+.fun-facts .counter p {
+  display: inline-flex;
+  vertical-align: middle;
+  cursor: default;
+}
+
+.fun-facts .counter p {
+  text-align: left;
+  font-size: 16px;
+  color: #1e1e1e;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.fun-facts .counter h2 {
+  margin-right: 25px;
+  font-size: 40px;
+  color: #fd5e53;
+  font-weight: 700;
+}
+
+.fun-facts .counter:after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fd5e53;
+  border-radius: 50%;
+  content: "";
+  right: -25px;
+  top: -25px;
+}

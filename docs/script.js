@@ -37,7 +37,7 @@ function sendMail() {
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".hidden");
   const observerOptions = {
-    threshold: 0.5,
+    threshold: 0.35,
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
@@ -52,6 +52,59 @@ document.addEventListener("DOMContentLoaded", function () {
   elements.forEach((element) => {
     observer.observe(element);
   });
+});
+
+//counter
+document.addEventListener("DOMContentLoaded", function () {
+  function animateCounter(counterElement, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      counterElement.innerText = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function initCounters() {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      const countElement = counter.querySelector(".count-number b");
+      const targetValue = parseInt(
+        countElement.textContent.replace(/\D/g, ""),
+        10
+      );
+      counter.classList.remove("hidden"); // Make the counter visible
+      animateCounter(countElement, 0, targetValue, 2000);
+    });
+  }
+
+  function checkAndAnimateCounters() {
+    const counters = document.querySelectorAll(".counter.hidden");
+    counters.forEach((counter) => {
+      if (isElementInViewport(counter)) {
+        counter.classList.remove("hidden");
+        initCounters();
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkAndAnimateCounters);
+  checkAndAnimateCounters();
 });
 
 //Loader
