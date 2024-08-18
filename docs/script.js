@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         countElement.textContent.replace(/\D/g, ""),
         10
       );
-      counter.classList.remove("hidden"); // Make the counter visible
+      counter.classList.remove("hidden");
       animateCounter(countElement, 0, targetValue, 2000);
     });
   }
